@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -26,13 +26,207 @@
 
 .App-link {
   color: #61dafb;
-}
+} */
 
-@keyframes App-logo-spin {
+/* @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
+  }
+} */
+
+* {
+  color: white;
+  overflow: hidden;
+}
+
+:root {
+  --br: 20px;
+  --bgmain: rgb(7, 7, 52);
+  --bgsub: rgb(17, 17, 71);
+}
+
+.mainbody {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--bgmain);
+  height: auto;
+}
+
+/*header*/
+
+.header {
+  height: 9.5vh;
+  width: 99.5%;
+  background-color: rgb(17, 17, 71);
+  margin: 4px;
+  border-radius: var(--br);
+}
+
+/*body*/
+
+.body {
+  display: flex;
+  flex-direction: row;
+  height: 44.5vh;
+  width: 100%;
+}
+
+.body1 {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  height: 100%;
+}
+
+.gps {
+  width: 40%;
+  height: auto;
+  background-color: var(--bgsub);
+  margin: 4px;
+  border-radius: var(--br);
+}
+
+.logo {
+  height: 14.5vh;
+  width: 54.5%;
+  margin: 4px;
+}
+
+.time {
+  height: 14.5vh;
+  width: 44.5%;
+  background-color: var(--bgsub);
+  /* margin: 4px; */
+  border-radius: var(--br);
+}
+
+.main {
+  height: 29.5vh;
+  background-color: var(--bgsub);
+  margin: 4px;
+  border-radius: var(--br);
+}
+
+
+
+.body2 {
+  display: flex;
+  flex-direction: row;
+  margin: 4px;
+}
+
+/*footer*/
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  height: 44.5vh;
+  width: 100%;
+}
+
+.footer1 {
+  display: flex;
+  flex-direction: column;
+  width: 24.5%;
+}
+
+.rain {
+  width: 15.25%;
+  background-color: var(--bgsub);
+  margin: 4px;
+  border-radius: var(--br);
+}
+
+.cooldata {
+  width: 59.1%;
+  background-color: var(--bgsub);
+  margin: 4px;
+  border-radius: var(--br);
+}
+
+.code {
+  height: 69.5%;
+  background-color: var(--bgsub);
+  margin: 4px;
+  border-radius: var(--br);
+}
+
+.latlong {
+  height: 29.5%;
+  background-color: var(--bgsub);
+  margin: 4px;
+  border-radius: var(--br);
+}
+
+@media (max-width:800px) {
+  * {
+    overflow: visible;
+  }
+.header{
+  width: 97vw;
+}
+  .mainbody {
+    height: auto;
+  }
+.main{
+  width: 97vw;
+  height: auto;
+}
+  .body {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
+
+  .body2 {
+    flex-direction: column;
+  }
+
+  .logo {
+    width: 97vw;
+  }
+
+  .time {
+    width: 97vw;
+  }
+
+ 
+
+  .body1 {
+    width: 97vw;
+  }
+
+  .cooldata {
+    width: 97vw;
+    height: 70vh;
+  }
+
+  .footer {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .gps {
+    width: 97vw;
+    height: 50vh;
+  }
+
+  .code {
+    width: 97vw;
+    height: 30vh;
+  }
+
+  .latlong {
+    width: 97vw;
+    height: 10vh;
+  }
+
+  .rain {
+    width: 97vw;
+    height: 30vh;
   }
 }

@@ -1,24 +1,61 @@
-import logo from './logo.svg';
+
 import './App.css';
+import Code from './MyComponents/Code';
+import Cooldata from './MyComponents/Cooldata';
+import GPS from './MyComponents/GPS';
+import Header from './MyComponents/Header';
+import LatLong from './MyComponents/LatLong';
+import Logo from './MyComponents/Logo';
+import Main from './MyComponents/Main';
+import Rain from './MyComponents/Rain';
+import Time from './MyComponents/Time';
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
+  const graphdata = [['x', 'item'],
+  [0, 0],
+  [1, 10],
+  [2, 23],
+  [3, 17],
+  [4, 18],
+  [5, 9],
+  [6, 11],
+  [7, 27],]
+
+  const maindata ={ ns : '34', pc :'54', as:'87'}
+
+  const coords ={ lat: '3.58275', lng: '97.04918'}
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      
+      <div className="mainbody">
+        <div className="header">
+          <Header />
+        </div>
+        <div className="body">
+          <div className="body1">
+            <div className="body2">
+              <div className="logo"><Logo /></div>
+              <div className="time"><Time /></div>
+            </div>
+            <div className="main"><Main maindata={maindata}/></div>
+          </div>
+          <div className="gps">
+            <GPS coords={coords} />
+          </div>
+        </div>
+        <div className="footer">
+          <div className="cooldata"><Cooldata graphdata={graphdata}/></div>
+          <div className="footer1">
+            <div className="code"><Code /></div>
+            <div className="latlong"><LatLong coords={coords}/></div>
+          </div>
+          <div className="rain">
+            <Rain />
+          </div>
+        </div>
+      </div>
+    </>
   );
 }
 
