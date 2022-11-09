@@ -29,28 +29,28 @@ function App() {
     <>
       
       <div className="mainbody">
-        <div className="header">
+        <div className="header trans">
           <Header />
         </div>
         <div className="body">
           <div className="body1">
             <div className="body2">
               <div className="logo"><Logo /></div>
-              <div className="time"><Time /></div>
+              <div className="time trans"><Time /></div>
             </div>
-            <div className="main"><Main maindata={maindata}/></div>
+            <div className="main trans"><Main maindata={maindata}/></div>
           </div>
-          <div className="gps">
-            <GPS coords={coords} />
+          <div className="gps trans">
+            <GPS coords={coords}/>
           </div>
         </div>
         <div className="footer">
-          <div className="cooldata"><Cooldata graphdata={graphdata}/></div>
+          <div className="cooldata trans"><Cooldata graphdata={graphdata}/></div>
           <div className="footer1">
-            <div className="code"><Code /></div>
-            <div className="latlong"><LatLong coords={coords}/></div>
+            <div className="code trans"><Code /></div>
+            <div className="latlong trans"><LatLong coords={coords}/></div>
           </div>
-          <div className="rain">
+          <div className="rain trans">
             <Rain />
           </div>
         </div>

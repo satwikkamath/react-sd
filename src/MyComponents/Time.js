@@ -26,7 +26,7 @@ class Time extends Component {
         + " : " + time.getMilliseconds();
 
       return (
-      <div className='container'>
+      <div className='container1'>
           <h2>
           {showTime}
           </h2>
