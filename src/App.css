@@ -104,6 +104,10 @@
   border-radius: var(--br);
   margin-bottom: 10px;
   margin-right: 4px;
+  font-family: 'Orbitron', sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .main {
